@@ -8,3 +8,8 @@ Development board for Microchip's WLR089U0 LoRaWAN module consisting of the SAMR
 # Snapshots:
 1.  
 2.  
+
+# Credits
+Atul Kumar
+Jithin Saji Isaac
+Feb 2021
