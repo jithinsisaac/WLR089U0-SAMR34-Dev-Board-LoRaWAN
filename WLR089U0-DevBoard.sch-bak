@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SamacSys_Parts:WLR089U0-I_RM IC1
+L WLR089U0-DevBoard-rescue:WLR089U0-I_RM-SamacSys_Parts IC1
 U 1 1 601A9C3D
 P 2100 2550
 F 0 "IC1" H 2800 2815 50  0000 C CNN
@@ -96,17 +96,6 @@ Text GLabel 3500 3050 2    50   Input ~ 0
 VDDCORE
 Text GLabel 3500 2950 2    50   Input ~ 0
 VSW
-$Comp
-L Regulator_Linear:MCP1700-3302E_TO92 U1
-U 1 1 601DF1E2
-P 2950 1150
-F 0 "U1" H 2950 908 50  0000 C CNN
-F 1 "MCP1700-3302E_TO92" H 2950 999 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2950 950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 2950 1150 50  0001 C CNN
-	1    2950 1150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3250 1150 3800 1150
 Wire Wire Line
@@ -174,7 +163,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 1150 2400 1450
 $Comp
-L Connector:USB_B_Micro J1
+L WLR089U0-DevBoard-rescue:USB_B_Micro-Connector J1
 U 1 1 601E6237
 P 950 1350
 F 0 "J1" H 1007 1817 50  0000 C CNN
@@ -373,8 +362,6 @@ Text GLabel 5000 850  1    50   Input ~ 0
 GND
 Wire Wire Line
 	5000 850  5000 1050
-Text GLabel 4100 1150 2    50   Input ~ 0
-+3V
 NoConn ~ 2100 6200
 Text GLabel 6000 2900 2    50   Input ~ 0
 GND
@@ -407,8 +394,6 @@ Text GLabel 6000 3000 2    50   Input ~ 0
 GND
 Wire Wire Line
 	3800 1150 4100 1150
-Text GLabel 4700 850  1    50   Input ~ 0
-+3V
 Wire Wire Line
 	4700 850  4700 1100
 Wire Wire Line
@@ -813,4 +798,39 @@ Wire Wire Line
 	8750 3750 9150 3750
 Wire Wire Line
 	8750 3850 9150 3850
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U1
+U 1 1 601ACC41
+P 2950 1150
+F 0 "U1" H 2950 1392 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 2950 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2950 1375 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 2950 1150 50  0001 C CNN
+	1    2950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601BD609
+P 4100 1120
+F 0 "#PWR?" H 4100 970 50  0001 C CNN
+F 1 "+3V3" H 4115 1293 50  0000 C CNN
+F 2 "" H 4100 1120 50  0001 C CNN
+F 3 "" H 4100 1120 50  0001 C CNN
+	1    4100 1120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1120 4100 1150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601C0F1A
+P 4700 850
+F 0 "#PWR?" H 4700 700 50  0001 C CNN
+F 1 "+3V3" H 4715 1023 50  0000 C CNN
+F 2 "" H 4700 850 50  0001 C CNN
+F 3 "" H 4700 850 50  0001 C CNN
+	1    4700 850 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

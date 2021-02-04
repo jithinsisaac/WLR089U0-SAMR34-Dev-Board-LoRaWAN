@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:LoRa wan-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SamacSys_Parts:WLR089U0-I_RM IC1
+L WLR089U0-DevBoard-rescue:WLR089U0-I_RM-SamacSys_Parts IC1
 U 1 1 601A9C3D
 P 2100 2550
 F 0 "IC1" H 2800 2815 50  0000 C CNN
@@ -164,7 +163,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 1150 2400 1450
 $Comp
-L Connector:USB_B_Micro J1
+L WLR089U0-DevBoard-rescue:USB_B_Micro-Connector J1
 U 1 1 601E6237
 P 950 1350
 F 0 "J1" H 1007 1817 50  0000 C CNN
@@ -363,8 +362,6 @@ Text GLabel 5000 850  1    50   Input ~ 0
 GND
 Wire Wire Line
 	5000 850  5000 1050
-Text GLabel 4100 1150 2    50   Input ~ 0
-+3V
 NoConn ~ 2100 6200
 Text GLabel 6000 2900 2    50   Input ~ 0
 GND
@@ -397,8 +394,6 @@ Text GLabel 6000 3000 2    50   Input ~ 0
 GND
 Wire Wire Line
 	3800 1150 4100 1150
-Text GLabel 4700 850  1    50   Input ~ 0
-+3V
 Wire Wire Line
 	4700 850  4700 1100
 Wire Wire Line
@@ -586,8 +581,6 @@ F 3 "~" H 1100 3450 50  0001 C CNN
 	1    1100 3450
 	1    0    0    -1  
 $EndComp
-Text GLabel 4400 2500 1    50   Input ~ 0
-+3V
 $Comp
 L Device:R_Small R6
 U 1 1 602CCF99
@@ -601,17 +594,6 @@ F 3 "~" H 4400 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 2500 4400 2600
-$Comp
-L Device:C_Small C3
-U 1 1 602CE99D
-P 4400 3000
-F 0 "C3" H 4492 3046 50  0000 L CNN
-F 1 "100n" H 4492 2955 50  0000 L CNN
-F 2 "" H 4400 3000 50  0001 C CNN
-F 3 "~" H 4400 3000 50  0001 C CNN
-	1    4400 3000
-	1    0    0    -1  
-$EndComp
 Text GLabel 3500 2850 2    50   Input ~ 0
 RESET
 Text GLabel 4600 2850 2    50   Input ~ 0
@@ -619,18 +601,18 @@ RESET
 $Comp
 L power:GND #PWR?
 U 1 1 602CF171
-P 4400 3250
-F 0 "#PWR?" H 4400 3000 50  0001 C CNN
-F 1 "GND" H 4405 3077 50  0000 C CNN
-F 2 "" H 4400 3250 50  0001 C CNN
-F 3 "" H 4400 3250 50  0001 C CNN
-	1    4400 3250
+P 4400 3380
+F 0 "#PWR?" H 4400 3130 50  0001 C CNN
+F 1 "GND" H 4405 3207 50  0000 C CNN
+F 2 "" H 4400 3380 50  0001 C CNN
+F 3 "" H 4400 3380 50  0001 C CNN
+	1    4400 3380
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4400 2800 4400 2850
 Wire Wire Line
-	4400 3100 4400 3250
+	4400 3230 4400 3380
 Wire Wire Line
 	4400 2850 4600 2850
 Connection ~ 4400 2850
@@ -812,6 +794,41 @@ F 1 "MCP1700-3302E_SOT23" H 2950 1301 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2950 1375 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 2950 1150 50  0001 C CNN
 	1    2950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601BD609
+P 4100 1120
+F 0 "#PWR?" H 4100 970 50  0001 C CNN
+F 1 "+3V3" H 4115 1293 50  0000 C CNN
+F 2 "" H 4100 1120 50  0001 C CNN
+F 3 "" H 4100 1120 50  0001 C CNN
+	1    4100 1120
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1120 4100 1150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601C0F1A
+P 4700 850
+F 0 "#PWR?" H 4700 700 50  0001 C CNN
+F 1 "+3V3" H 4715 1023 50  0000 C CNN
+F 2 "" H 4700 850 50  0001 C CNN
+F 3 "" H 4700 850 50  0001 C CNN
+	1    4700 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 601C1722
+P 4400 2500
+F 0 "#PWR?" H 4400 2350 50  0001 C CNN
+F 1 "+3V3" H 4415 2673 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
