@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:WLR089U0-DevBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -30,22 +31,6 @@ F 9 "WLR089U0-I/RM" H 3100 2135 50  0001 L CNN "Manufacturer_Part_Number"
 	1    1850 2735
 	1    0    0    -1  
 $EndComp
-Text GLabel 4135 6240 0    50   Input ~ 0
-PA07
-Text GLabel 4135 6340 0    50   Input ~ 0
-PA08
-Text GLabel 5605 6550 2    50   Input ~ 0
-PA27
-Text GLabel 4135 6640 0    50   Input ~ 0
-PA18
-Text GLabel 4135 6740 0    50   Input ~ 0
-PA19
-Text GLabel 4135 6540 0    50   Input ~ 0
-PA15
-Text GLabel 4135 6440 0    50   Input ~ 0
-PA14
-Text GLabel 5605 6650 2    50   Input ~ 0
-PA22
 Text GLabel 1850 3135 0    50   Input ~ 0
 PA07
 Text GLabel 1850 3235 0    50   Input ~ 0
@@ -64,16 +49,6 @@ Text GLabel 1850 4635 0    50   Input ~ 0
 PA22
 Text GLabel 1850 4735 0    50   Input ~ 0
 MCU_U_P
-Text GLabel 4135 6140 0    50   Input ~ 0
-PA06
-Text GLabel 4135 6040 0    50   Input ~ 0
-PA03
-Text GLabel 5610 6450 2    50   Input ~ 0
-PA28
-Text GLabel 5610 6250 2    50   Input ~ 0
-VDDCORE
-Text GLabel 5610 6350 2    50   Input ~ 0
-VSW
 Text GLabel 3250 2735 2    50   Input ~ 0
 MCU_U_N
 Text GLabel 3250 3935 2    50   Input ~ 0
@@ -293,27 +268,27 @@ RESET
 $Comp
 L Device:C_Small C3
 U 1 1 602D3CA5
-P 9335 3045
-F 0 "C3" V 9564 3045 50  0000 C CNN
-F 1 "100n" V 9473 3045 50  0000 C CNN
-F 2 "" H 9335 3045 50  0001 C CNN
-F 3 "~" H 9335 3045 50  0001 C CNN
-	1    9335 3045
+P 9125 3045
+F 0 "C3" V 9354 3045 50  0000 C CNN
+F 1 "100n" V 9263 3045 50  0000 C CNN
+F 2 "" H 9125 3045 50  0001 C CNN
+F 3 "~" H 9125 3045 50  0001 C CNN
+	1    9125 3045
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR022
 U 1 1 602D61C1
-P 9635 3045
-F 0 "#PWR022" H 9635 2795 50  0001 C CNN
-F 1 "GND" V 9640 2917 50  0000 R CNN
-F 2 "" H 9635 3045 50  0001 C CNN
-F 3 "" H 9635 3045 50  0001 C CNN
-	1    9635 3045
+P 9425 3045
+F 0 "#PWR022" H 9425 2795 50  0001 C CNN
+F 1 "GND" V 9430 2917 50  0000 R CNN
+F 2 "" H 9425 3045 50  0001 C CNN
+F 3 "" H 9425 3045 50  0001 C CNN
+	1    9425 3045
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9435 3045 9635 3045
+	9225 3045 9425 3045
 $Comp
 L Regulator_Linear:MCP1700-3302E_SOT23 U1
 U 1 1 601ACC41
@@ -526,63 +501,6 @@ Wire Wire Line
 Wire Wire Line
 	3400 2935 3400 2835
 Connection ~ 3400 2835
-$Comp
-L power:+3V3 #PWR030
-U 1 1 601BD6AD
-P 5610 5950
-F 0 "#PWR030" H 5610 5800 50  0001 C CNN
-F 1 "+3V3" H 5625 6123 50  0000 C CNN
-F 2 "" H 5610 5950 50  0001 C CNN
-F 3 "" H 5610 5950 50  0001 C CNN
-	1    5610 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR025
-U 1 1 601C4A8C
-P 3805 5940
-F 0 "#PWR025" H 3805 5790 50  0001 C CNN
-F 1 "+5V" H 3820 6113 50  0000 C CNN
-F 2 "" H 3805 5940 50  0001 C CNN
-F 3 "" H 3805 5940 50  0001 C CNN
-	1    3805 5940
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5610 6150 2    50   Input ~ 0
-UART_RX
-Text GLabel 5610 6050 2    50   Input ~ 0
-UART_TX
-Wire Wire Line
-	5410 6650 5605 6650
-Wire Wire Line
-	5410 6550 5605 6550
-Wire Wire Line
-	5410 6350 5610 6350
-Wire Wire Line
-	5410 6250 5610 6250
-Wire Wire Line
-	5410 6150 5610 6150
-Wire Wire Line
-	5410 6050 5610 6050
-Wire Wire Line
-	5410 5950 5610 5950
-$Comp
-L power:GND #PWR029
-U 1 1 60245A07
-P 5715 6800
-F 0 "#PWR029" H 5715 6550 50  0001 C CNN
-F 1 "GND" H 5720 6627 50  0000 C CNN
-F 2 "" H 5715 6800 50  0001 C CNN
-F 3 "" H 5715 6800 50  0001 C CNN
-	1    5715 6800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5410 6850 5610 6850
-Wire Wire Line
-	5610 6850 5610 6800
-Wire Wire Line
-	5410 6750 5610 6750
 Wire Wire Line
 	4660 4225 4660 3975
 $Comp
@@ -651,22 +569,6 @@ F 3 "" H 8970 4585 50  0001 C CNN
 	1    8970 4585
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8820 3045 8970 3045
-Connection ~ 8970 3045
-Wire Wire Line
-	5410 6450 5610 6450
-$Comp
-L Connector:Conn_01x10_Female J5
-U 1 1 601E7A94
-P 5210 6450
-F 0 "J5" V 5283 6380 50  0000 C CNN
-F 1 "Conn_01x10_Female" V 5374 6380 50  0000 C CNN
-F 2 "" H 5210 6450 50  0001 C CNN
-F 3 "~" H 5210 6450 50  0001 C CNN
-	1    5210 6450
-	-1   0    0    1   
-$EndComp
 Text Notes 570  5465 0    79   ~ 16
 ARM CORTEX SWD PROGRAMMING\n10 PIN HEADER
 Text Notes 565  2285 0    79   ~ 16
@@ -688,11 +590,7 @@ Wire Notes Line
 Wire Notes Line
 	545  550  545  7705
 Wire Notes Line
-	6905 7705 6905 5185
-Wire Notes Line
 	545  7705 6905 7705
-Wire Notes Line
-	2715 5185 2715 7705
 Wire Notes Line
 	4785 550  4785 2150
 Text GLabel 6350 1090 1    50   Input ~ 0
@@ -717,7 +615,7 @@ Text Notes 6070 2445 0    79   ~ 16
 USB-UART USING CH340E via JP3 short (OR)\nUSB-USB via JP1,JP2 short
 Wire Notes Line
 	6035 555  6035 5185
-Text Notes 2730 5330 0    79   ~ 16
+Text Notes 3045 5330 0    79   ~ 16
 GPIO PIN HEADERS
 NoConn ~ 2150 6785
 NoConn ~ 2150 6685
@@ -745,8 +643,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 7260 1600 7260
 Connection ~ 1600 7260
-Wire Wire Line
-	8970 3045 9235 3045
 Text GLabel 9740 3640 2    50   Input ~ 0
 UART_TX
 Text GLabel 9740 3490 2    50   Input ~ 0
@@ -776,32 +672,15 @@ Wire Wire Line
 	7510 4175 7675 4175
 Wire Wire Line
 	8075 4175 8395 4175
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 6031D154
-P 8570 3045
-F 0 "JP3" H 8570 2875 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 8565 2945 50  0000 C CNN
-F 2 "" H 8570 3045 50  0001 C CNN
-F 3 "~" H 8570 3045 50  0001 C CNN
-	1    8570 3045
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8720 3045 8820 3045
 Connection ~ 8820 3045
 Wire Wire Line
 	8325 2830 8325 3045
-Wire Wire Line
-	8325 3045 8420 3045
 Text Notes 6950 5340 0    79   ~ 16
 I2C & SPI HEADER
 Wire Wire Line
 	9480 5875 9480 5740
 Wire Wire Line
 	9380 5875 9380 5745
-Wire Notes Line
-	11130 6470 6900 6470
 $Comp
 L power:+3V3 #PWR031
 U 1 1 601BFB9C
@@ -886,40 +765,6 @@ $EndComp
 Text GLabel 9280 5695 1    50   Input ~ 0
 I2C_SCL
 Wire Wire Line
-	3835 6840 4135 6840
-$Comp
-L Connector:Conn_01x10_Female J3
-U 1 1 601E0189
-P 4335 6340
-F 0 "J3" H 4363 6316 50  0000 L CNN
-F 1 "Conn_01x10_Female" V 4485 5930 50  0000 L CNN
-F 2 "" H 4335 6340 50  0001 C CNN
-F 3 "~" H 4335 6340 50  0001 C CNN
-	1    4335 6340
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 601D1064
-P 3835 6840
-F 0 "#PWR026" H 3835 6590 50  0001 C CNN
-F 1 "GND" H 3840 6667 50  0000 C CNN
-F 2 "" H 3835 6840 50  0001 C CNN
-F 3 "" H 3835 6840 50  0001 C CNN
-	1    3835 6840
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4135 5940 3805 5940
-Connection ~ 3805 5940
-Wire Wire Line
-	3805 5940 3695 5940
-Wire Wire Line
-	5715 6800 5610 6800
-Connection ~ 5610 6800
-Wire Wire Line
-	5610 6800 5610 6750
-Wire Wire Line
 	2360 1085 2360 1110
 Wire Wire Line
 	980  1675 1030 1675
@@ -994,4 +839,160 @@ F 3 "" H 8770 3740 50  0001 C CNN
 	1    8870 3490
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	3025 5180 3025 7705
+Wire Wire Line
+	5730 6750 5730 6700
+Connection ~ 5730 6750
+Wire Wire Line
+	5835 6750 5730 6750
+Wire Wire Line
+	3925 5890 3815 5890
+Connection ~ 3925 5890
+Wire Wire Line
+	4255 5890 3925 5890
+$Comp
+L power:GND #PWR026
+U 1 1 601D1064
+P 3955 6790
+F 0 "#PWR026" H 3955 6540 50  0001 C CNN
+F 1 "GND" H 3960 6617 50  0000 C CNN
+F 2 "" H 3955 6790 50  0001 C CNN
+F 3 "" H 3955 6790 50  0001 C CNN
+	1    3955 6790
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x10_Female J3
+U 1 1 601E0189
+P 4455 6290
+F 0 "J3" H 4483 6266 50  0000 L CNN
+F 1 "Conn_01x10_Female" V 4605 5880 50  0000 L CNN
+F 2 "" H 4455 6290 50  0001 C CNN
+F 3 "~" H 4455 6290 50  0001 C CNN
+	1    4455 6290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3955 6790 4255 6790
+Wire Notes Line
+	11130 6470 6900 6470
+Wire Notes Line
+	6905 7705 6905 5185
+$Comp
+L Connector:Conn_01x10_Female J5
+U 1 1 601E7A94
+P 5330 6400
+F 0 "J5" V 5403 6330 50  0000 C CNN
+F 1 "Conn_01x10_Female" V 5494 6330 50  0000 C CNN
+F 2 "" H 5330 6400 50  0001 C CNN
+F 3 "~" H 5330 6400 50  0001 C CNN
+	1    5330 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5530 6400 5730 6400
+Wire Wire Line
+	5530 6700 5730 6700
+Wire Wire Line
+	5730 6800 5730 6750
+Wire Wire Line
+	5530 6800 5730 6800
+$Comp
+L power:GND #PWR029
+U 1 1 60245A07
+P 5835 6750
+F 0 "#PWR029" H 5835 6500 50  0001 C CNN
+F 1 "GND" H 5840 6577 50  0000 C CNN
+F 2 "" H 5835 6750 50  0001 C CNN
+F 3 "" H 5835 6750 50  0001 C CNN
+	1    5835 6750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5530 5900 5730 5900
+Wire Wire Line
+	5530 6000 5730 6000
+Wire Wire Line
+	5530 6100 5730 6100
+Wire Wire Line
+	5530 6200 5730 6200
+Wire Wire Line
+	5530 6300 5730 6300
+Wire Wire Line
+	5530 6500 5725 6500
+Wire Wire Line
+	5530 6600 5725 6600
+Text GLabel 5730 6000 2    50   Input ~ 0
+UART_TX
+Text GLabel 5730 6100 2    50   Input ~ 0
+UART_RX
+$Comp
+L power:+5V #PWR025
+U 1 1 601C4A8C
+P 3925 5890
+F 0 "#PWR025" H 3925 5740 50  0001 C CNN
+F 1 "+5V" H 3940 6063 50  0000 C CNN
+F 2 "" H 3925 5890 50  0001 C CNN
+F 3 "" H 3925 5890 50  0001 C CNN
+	1    3925 5890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR030
+U 1 1 601BD6AD
+P 5730 5900
+F 0 "#PWR030" H 5730 5750 50  0001 C CNN
+F 1 "+3V3" H 5745 6073 50  0000 C CNN
+F 2 "" H 5730 5900 50  0001 C CNN
+F 3 "" H 5730 5900 50  0001 C CNN
+	1    5730 5900
+	0    1    1    0   
+$EndComp
+Text GLabel 5730 6300 2    50   Input ~ 0
+VSW
+Text GLabel 5730 6200 2    50   Input ~ 0
+VDDCORE
+Text GLabel 5730 6400 2    50   Input ~ 0
+PA28
+Text GLabel 4255 5990 0    50   Input ~ 0
+PA03
+Text GLabel 4255 6090 0    50   Input ~ 0
+PA06
+Text GLabel 5725 6600 2    50   Input ~ 0
+PA22
+Text GLabel 4255 6390 0    50   Input ~ 0
+PA14
+Text GLabel 4255 6490 0    50   Input ~ 0
+PA15
+Text GLabel 4255 6690 0    50   Input ~ 0
+PA19
+Text GLabel 4255 6590 0    50   Input ~ 0
+PA18
+Text GLabel 5725 6500 2    50   Input ~ 0
+PA27
+Text GLabel 4255 6290 0    50   Input ~ 0
+PA08
+Text GLabel 4255 6190 0    50   Input ~ 0
+PA07
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 601C47FE
+P 8565 3045
+F 0 "JP3" H 8565 3135 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8355 2950 50  0000 C CNN
+F 2 "" H 8565 3045 50  0001 C CNN
+F 3 "~" H 8565 3045 50  0001 C CNN
+	1    8565 3045
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8715 3045 8820 3045
+Wire Wire Line
+	8325 3045 8415 3045
+Wire Wire Line
+	8820 3045 8970 3045
+Connection ~ 8970 3045
+Wire Wire Line
+	8970 3045 9025 3045
 $EndSCHEMATC
