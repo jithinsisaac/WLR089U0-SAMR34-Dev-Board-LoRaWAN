@@ -35,7 +35,7 @@ Text GLabel 1400 3400 0    50   Input ~ 0
 PA07
 Text GLabel 1400 3500 0    50   Input ~ 0
 PA08
-Text GLabel 6500 3950 2    50   Input ~ 0
+Text GLabel 6550 3240 0    50   Input ~ 0
 PA27
 Text GLabel 1400 3800 0    50   Input ~ 0
 PA18
@@ -45,7 +45,7 @@ Text GLabel 1400 3700 0    50   Input ~ 0
 PA15
 Text GLabel 1400 3600 0    50   Input ~ 0
 PA14
-Text GLabel 6500 4050 2    50   Input ~ 0
+Text GLabel 6550 3140 0    50   Input ~ 0
 PA22
 Text GLabel 3100 3100 0    50   Input ~ 0
 PA07
@@ -69,11 +69,11 @@ Text GLabel 1400 3300 0    50   Input ~ 0
 PA06
 Text GLabel 1400 3200 0    50   Input ~ 0
 PA03
-Text GLabel 6500 3850 2    50   Input ~ 0
+Text GLabel 6550 3340 0    50   Input ~ 0
 PA28
-Text GLabel 6550 3650 2    50   Input ~ 0
+Text GLabel 6500 3540 0    50   Input ~ 0
 VDDCORE
-Text GLabel 6550 3750 2    50   Input ~ 0
+Text GLabel 6500 3440 0    50   Input ~ 0
 VSW
 Text GLabel 4500 2700 2    50   Input ~ 0
 MCU_U_N
@@ -329,19 +329,19 @@ Text GLabel 1360 1260 2    50   Input ~ 0
 D-
 Wire Wire Line
 	1060 1260 1360 1260
-Text GLabel 3815 6505 3    50   Input ~ 0
+Text GLabel 3860 6500 3    50   Input ~ 0
 D+
 Text GLabel 3615 7205 3    50   Input ~ 0
 D-
 $Comp
 L Jumper:SolderJumper_3_Bridged12 JP1
 U 1 1 602772DE
-P 3815 6205
-F 0 "JP1" H 3665 6055 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 3815 6319 50  0000 C CNN
-F 2 "" H 3815 6205 50  0001 C CNN
-F 3 "~" H 3815 6205 50  0001 C CNN
-	1    3815 6205
+P 3860 6200
+F 0 "JP1" H 3710 6050 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 3860 6314 50  0000 C CNN
+F 2 "" H 3860 6200 50  0001 C CNN
+F 3 "~" H 3860 6200 50  0001 C CNN
+	1    3860 6200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -358,15 +358,15 @@ $EndComp
 Wire Wire Line
 	3615 7005 3615 7205
 Wire Wire Line
-	3815 6355 3815 6505
-Text GLabel 3415 6205 0    50   Input ~ 0
+	3860 6350 3860 6500
+Text GLabel 3460 6200 0    50   Input ~ 0
 MCU_U_P
 Text GLabel 3265 6855 0    50   Input ~ 0
 MCU_U_N
 Wire Wire Line
 	3265 6855 3415 6855
 Wire Wire Line
-	3415 6205 3615 6205
+	3460 6200 3660 6200
 $Comp
 L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 60287232
@@ -776,13 +776,13 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR?
 U 1 1 601BD6AD
-P 6550 3350
-F 0 "#PWR?" H 6550 3200 50  0001 C CNN
-F 1 "+3V3" H 6565 3523 50  0000 C CNN
-F 2 "" H 6550 3350 50  0001 C CNN
-F 3 "" H 6550 3350 50  0001 C CNN
-	1    6550 3350
-	0    1    1    0   
+P 6500 3840
+F 0 "#PWR?" H 6500 3690 50  0001 C CNN
+F 1 "+3V3" H 6515 4013 50  0000 C CNN
+F 2 "" H 6500 3840 50  0001 C CNN
+F 3 "" H 6500 3840 50  0001 C CNN
+	1    6500 3840
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR?
@@ -806,9 +806,9 @@ F 3 "" H 1100 4100 50  0001 C CNN
 	1    1100 4100
 	0    1    1    0   
 $EndComp
-Text GLabel 6550 3550 2    50   Input ~ 0
+Text GLabel 6500 3640 0    50   Input ~ 0
 UART_RX
-Text GLabel 6550 3450 2    50   Input ~ 0
+Text GLabel 6500 3740 0    50   Input ~ 0
 UART_TX
 $Comp
 L Connector:Conn_01x10_Female J2
@@ -821,57 +821,44 @@ F 3 "~" H 1600 3600 50  0001 C CNN
 	1    1600 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x10_Female J3
-U 1 1 601E7A94
-P 6150 3650
-F 0 "J3" V 6223 3580 50  0000 C CNN
-F 1 "Conn_01x10_Female" V 6314 3580 50  0000 C CNN
-F 2 "" H 6150 3650 50  0001 C CNN
-F 3 "~" H 6150 3650 50  0001 C CNN
-	1    6150 3650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1100 4000 1400 4000
 Wire Wire Line
 	1100 4100 1400 4100
 Wire Wire Line
-	6350 4050 6500 4050
+	6700 3140 6550 3140
 Wire Wire Line
-	6350 3950 6500 3950
+	6700 3240 6550 3240
 Wire Wire Line
-	6350 3850 6500 3850
+	6700 3440 6500 3440
 Wire Wire Line
-	6350 3750 6550 3750
+	6700 3540 6500 3540
 Wire Wire Line
-	6350 3650 6550 3650
+	6700 3640 6500 3640
 Wire Wire Line
-	6350 3550 6550 3550
+	6700 3740 6500 3740
 Wire Wire Line
-	6350 3450 6550 3450
-Wire Wire Line
-	6350 3350 6550 3350
+	6700 3840 6500 3840
 $Comp
 L power:GND #PWR?
 U 1 1 60245A07
-P 6550 3100
-F 0 "#PWR?" H 6550 2850 50  0001 C CNN
-F 1 "GND" H 6555 2927 50  0000 C CNN
-F 2 "" H 6550 3100 50  0001 C CNN
-F 3 "" H 6550 3100 50  0001 C CNN
-	1    6550 3100
-	0    -1   -1   0   
+P 6500 4090
+F 0 "#PWR?" H 6500 3840 50  0001 C CNN
+F 1 "GND" H 6505 3917 50  0000 C CNN
+F 2 "" H 6500 4090 50  0001 C CNN
+F 3 "" H 6500 4090 50  0001 C CNN
+	1    6500 4090
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6350 3250 6550 3250
+	6700 3940 6500 3940
 Wire Wire Line
-	6550 3250 6550 3150
+	6500 3940 6500 4040
 Wire Wire Line
-	6350 3150 6550 3150
-Connection ~ 6550 3150
+	6700 4040 6500 4040
+Connection ~ 6500 4040
 Wire Wire Line
-	6550 3150 6550 3100
+	6500 4040 6500 4090
 Wire Wire Line
 	5400 3400 5400 3150
 $Comp
@@ -930,7 +917,7 @@ F 3 "~" H 5400 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4715 5755 5365 5755
+	4715 5755 4800 5755
 $Comp
 L Interface_USB:CH304e U4
 U 1 1 602F45E0
@@ -956,18 +943,49 @@ $EndComp
 Wire Wire Line
 	4950 7200 4950 7350
 Wire Wire Line
-	4000 6200 4500 6200
-Wire Wire Line
 	4500 6350 4150 6350
-Wire Wire Line
-	4150 6350 4150 6850
-Wire Wire Line
-	4150 6850 3800 6850
-Wire Wire Line
-	4800 5750 4800 5900
-Wire Wire Line
-	4950 5750 4950 5900
 NoConn ~ 5350 6650
 NoConn ~ 5350 6900
 NoConn ~ 4500 6650
+Wire Wire Line
+	5390 6155 5765 6155
+Wire Wire Line
+	5350 6200 5390 6200
+Wire Wire Line
+	5390 6155 5390 6200
+Wire Wire Line
+	5605 6350 5605 6255
+Wire Wire Line
+	5605 6255 5765 6255
+Wire Wire Line
+	5350 6350 5605 6350
+Wire Wire Line
+	3815 6855 4150 6855
+Wire Wire Line
+	4150 6350 4150 6855
+Wire Wire Line
+	4060 6200 4500 6200
+Wire Wire Line
+	4800 5900 4800 5755
+Connection ~ 4800 5755
+Wire Wire Line
+	4800 5755 4950 5755
+Wire Wire Line
+	4950 5900 4950 5755
+Connection ~ 4950 5755
+Wire Wire Line
+	4950 5755 5365 5755
+Wire Wire Line
+	6700 3340 6550 3340
+$Comp
+L Connector:Conn_01x10_Female J3
+U 1 1 601E7A94
+P 6900 3540
+F 0 "J3" V 6973 3470 50  0000 C CNN
+F 1 "Conn_01x10_Female" V 7064 3470 50  0000 C CNN
+F 2 "" H 6900 3540 50  0001 C CNN
+F 3 "~" H 6900 3540 50  0001 C CNN
+	1    6900 3540
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
