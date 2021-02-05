@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:WLR089U0-DevBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -47,13 +48,13 @@ PA14
 Text GLabel 1850 4635 0    50   Input ~ 0
 PA22
 Text GLabel 1850 4735 0    50   Input ~ 0
-MCU_U_P
+UBS_DP
 Text GLabel 3250 2735 2    50   Input ~ 0
-MCU_U_N
+USB_DM
 Text GLabel 3250 3935 2    50   Input ~ 0
 PA06
 Text GLabel 3250 3835 2    50   Input ~ 0
-PA03
+PB03
 Text GLabel 3250 3535 2    50   Input ~ 0
 SWDCLK
 Text GLabel 3250 3435 2    50   Input ~ 0
@@ -150,34 +151,34 @@ Connection ~ 2610 1110
 $Comp
 L Device:LED_Small D1
 U 1 1 601EE43B
-P 5210 1420
-F 0 "D1" V 5256 1352 50  0000 R CNN
-F 1 "red" V 5165 1352 50  0000 R CNN
-F 2 "" V 5210 1420 50  0001 C CNN
-F 3 "~" V 5210 1420 50  0001 C CNN
-	1    5210 1420
+P 6485 1375
+F 0 "D1" V 6531 1307 50  0000 R CNN
+F 1 "red" V 6440 1307 50  0000 R CNN
+F 2 "" V 6485 1375 50  0001 C CNN
+F 3 "~" V 6485 1375 50  0001 C CNN
+	1    6485 1375
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R2
 U 1 1 601F18B4
-P 5455 1420
-F 0 "R2" H 5514 1466 50  0000 L CNN
-F 1 "1k" H 5514 1375 50  0000 L CNN
-F 2 "" H 5455 1420 50  0001 C CNN
-F 3 "~" H 5455 1420 50  0001 C CNN
-	1    5455 1420
+P 6730 1375
+F 0 "R2" H 6789 1421 50  0000 L CNN
+F 1 "1k" H 6789 1330 50  0000 L CNN
+F 2 "" H 6730 1375 50  0001 C CNN
+F 3 "~" H 6730 1375 50  0001 C CNN
+	1    6730 1375
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR023
 U 1 1 601F20C4
-P 5640 1420
-F 0 "#PWR023" H 5640 1170 50  0001 C CNN
-F 1 "GND" H 5645 1247 50  0000 C CNN
-F 2 "" H 5640 1420 50  0001 C CNN
-F 3 "" H 5640 1420 50  0001 C CNN
-	1    5640 1420
+P 6915 1375
+F 0 "#PWR023" H 6915 1125 50  0001 C CNN
+F 1 "GND" H 6920 1202 50  0000 C CNN
+F 2 "" H 6915 1375 50  0001 C CNN
+F 3 "" H 6915 1375 50  0001 C CNN
+	1    6915 1375
 	1    0    0    -1  
 $EndComp
 Text GLabel 2150 6585 2    50   Input ~ 0
@@ -189,42 +190,42 @@ RESET
 $Comp
 L Device:LED_Small D2
 U 1 1 6022B2EB
-P 6450 1330
-F 0 "D2" V 6496 1262 50  0000 R CNN
-F 1 "Green" V 6405 1262 50  0000 R CNN
-F 2 "" V 6450 1330 50  0001 C CNN
-F 3 "~" V 6450 1330 50  0001 C CNN
-	1    6450 1330
+P 7800 1310
+F 0 "D2" V 7846 1242 50  0000 R CNN
+F 1 "Green" V 7755 1242 50  0000 R CNN
+F 2 "" V 7800 1310 50  0001 C CNN
+F 3 "~" V 7800 1310 50  0001 C CNN
+	1    7800 1310
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6450 1155 6450 1230
+	7800 1135 7800 1210
 $Comp
 L Device:R_Small R3
 U 1 1 6022B2F8
-P 6700 1480
-F 0 "R3" H 6759 1526 50  0000 L CNN
-F 1 "1k" H 6759 1435 50  0000 L CNN
-F 2 "" H 6700 1480 50  0001 C CNN
-F 3 "~" H 6700 1480 50  0001 C CNN
-	1    6700 1480
+P 8050 1460
+F 0 "R3" H 8109 1506 50  0000 L CNN
+F 1 "1k" H 8109 1415 50  0000 L CNN
+F 2 "" H 8050 1460 50  0001 C CNN
+F 3 "~" H 8050 1460 50  0001 C CNN
+	1    8050 1460
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 6022B2FE
-P 6955 1485
-F 0 "#PWR024" H 6955 1235 50  0001 C CNN
-F 1 "GND" H 6960 1312 50  0000 C CNN
-F 2 "" H 6955 1485 50  0001 C CNN
-F 3 "" H 6955 1485 50  0001 C CNN
-	1    6955 1485
+P 8305 1465
+F 0 "#PWR024" H 8305 1215 50  0001 C CNN
+F 1 "GND" H 8310 1292 50  0000 C CNN
+F 2 "" H 8305 1465 50  0001 C CNN
+F 3 "" H 8305 1465 50  0001 C CNN
+	1    8305 1465
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4010 1110 4310 1110
 Wire Wire Line
-	5110 1170 5110 1420
+	6385 1125 6385 1375
 Text GLabel 1680 1275 2    50   Input ~ 0
 D+
 Text GLabel 1680 1375 2    50   Input ~ 0
@@ -243,25 +244,25 @@ $EndComp
 Wire Wire Line
 	7880 3640 7880 3790
 Text GLabel 7480 3490 0    50   Input ~ 0
-MCU_U_P
+USB_DP
 Wire Wire Line
 	7480 3490 7680 3490
 Text GLabel 3250 3635 2    50   Input ~ 0
-UART_RX
+S0_UART_RX
 Text GLabel 3250 3735 2    50   Input ~ 0
-UART_TX
+S0_UART_TX
 Text GLabel 1850 4235 0    50   Input ~ 0
-MOSI
+S5_MOSI
 Text GLabel 1850 4535 0    50   Input ~ 0
-MISO
+S5_MISO
 Text GLabel 1850 4435 0    50   Input ~ 0
-SCK
+S5_SCK
 Text GLabel 1850 4335 0    50   Input ~ 0
-SS
+S5_SS
 Text GLabel 1850 3535 0    50   Input ~ 0
-I2C_SCL
+S1_I2C_SCL
 Text GLabel 1850 3435 0    50   Input ~ 0
-I2C_SDA
+S1_I2C_SDA
 Text GLabel 3250 3035 2    50   Input ~ 0
 RESET
 $Comp
@@ -302,23 +303,23 @@ $EndComp
 $Comp
 L power:+3V3 #PWR019
 U 1 1 601BD609
-P 8200 1160
-F 0 "#PWR019" H 8200 1010 50  0001 C CNN
-F 1 "+3V3" H 8215 1333 50  0000 C CNN
-F 2 "" H 8200 1160 50  0001 C CNN
-F 3 "" H 8200 1160 50  0001 C CNN
-	1    8200 1160
+P 5465 1185
+F 0 "#PWR019" H 5465 1035 50  0001 C CNN
+F 1 "+3V3" H 5480 1358 50  0000 C CNN
+F 2 "" H 5465 1185 50  0001 C CNN
+F 3 "" H 5465 1185 50  0001 C CNN
+	1    5465 1185
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR021
 U 1 1 601C0F1A
-P 5110 1170
-F 0 "#PWR021" H 5110 1020 50  0001 C CNN
-F 1 "+3V3" H 5125 1343 50  0000 C CNN
-F 2 "" H 5110 1170 50  0001 C CNN
-F 3 "" H 5110 1170 50  0001 C CNN
-	1    5110 1170
+P 6385 1125
+F 0 "#PWR021" H 6385 975 50  0001 C CNN
+F 1 "+3V3" H 6400 1298 50  0000 C CNN
+F 2 "" H 6385 1125 50  0001 C CNN
+F 3 "" H 6385 1125 50  0001 C CNN
+	1    6385 1125
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -575,9 +576,9 @@ POWER CIRCUITRY
 Wire Wire Line
 	3400 2835 3745 2835
 Wire Wire Line
-	5310 1420 5355 1420
+	6585 1375 6630 1375
 Wire Wire Line
-	5555 1420 5640 1420
+	6830 1375 6915 1375
 Wire Notes Line
 	550  550  11130 550 
 Wire Notes Line
@@ -590,21 +591,21 @@ Wire Notes Line
 	545  7705 6905 7705
 Wire Notes Line
 	4785 550  4785 2150
-Text GLabel 6450 1155 1    50   Input ~ 0
+Text GLabel 7800 1135 1    50   Input ~ 0
 PA08
 Wire Wire Line
-	6450 1430 6450 1480
+	7800 1410 7800 1460
 Wire Wire Line
-	6450 1480 6600 1480
+	7800 1460 7950 1460
 Wire Wire Line
-	6800 1480 6955 1480
+	8150 1460 8305 1460
 Wire Wire Line
-	6955 1480 6955 1485
+	8305 1460 8305 1465
 Wire Notes Line
 	11130 550  11130 6470
-Text Notes 4800 700  0    79   ~ 16
+Text Notes 6170 720  0    79   ~ 16
 POWER LED
-Text Notes 6065 690  0    79   ~ 16
+Text Notes 7470 705  0    79   ~ 16
 GPIO STATUS LED
 Text Notes 6070 2445 0    79   ~ 16
 USB-UART USING CH340E via JP3 short (OR)\nUSB-MCU_USB via JP1,JP2 short
@@ -643,7 +644,7 @@ UART_TX
 Text GLabel 9740 3490 2    50   Input ~ 0
 UART_RX
 Text GLabel 7510 4175 0    50   Input ~ 0
-MCU_U_N
+USB_DM
 Wire Wire Line
 	7875 4325 7875 4525
 $Comp
@@ -725,14 +726,14 @@ Wire Wire Line
 	8880 5875 8880 5690
 Wire Wire Line
 	8780 5875 8780 5690
-Text GLabel 8880 5690 1    50   Input ~ 0
-MOSI
-Text GLabel 9080 5690 1    50   Input ~ 0
-SS
 Text GLabel 8980 5690 1    50   Input ~ 0
-SCK
-Text GLabel 8780 5690 1    50   Input ~ 0
-MISO
+S5_MOSI
+Text GLabel 9080 5690 1    50   Input ~ 0
+S5_SS
+Text GLabel 9180 5695 1    50   Input ~ 0
+S5_SCK
+Text GLabel 9280 5695 1    50   Input ~ 0
+S5_MISO
 $Comp
 L Connector:Conn_01x10_Male J4
 U 1 1 6031E5B3
@@ -744,8 +745,8 @@ F 3 "~" H 8980 6075 50  0001 C CNN
 	1    8980 6075
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9180 5695 1    50   Input ~ 0
-I2C_SDA
+Text GLabel 8880 5690 1    50   Input ~ 0
+S1_I2C_SDA
 $Comp
 L power:GND #PWR032
 U 1 1 602FCC79
@@ -757,8 +758,8 @@ F 3 "" H 9380 5745 50  0001 C CNN
 	1    9380 5745
 	-1   0    0    1   
 $EndComp
-Text GLabel 9280 5695 1    50   Input ~ 0
-I2C_SCL
+Text GLabel 8780 5690 1    50   Input ~ 0
+S1_I2C_SCL
 Wire Wire Line
 	2360 1085 2360 1110
 Wire Wire Line
@@ -835,11 +836,6 @@ $EndComp
 Wire Notes Line
 	3025 5180 3025 7705
 Wire Wire Line
-	5730 6750 5730 6700
-Connection ~ 5730 6750
-Wire Wire Line
-	5835 6750 5730 6750
-Wire Wire Line
 	3925 5890 3815 5890
 Connection ~ 3925 5890
 Wire Wire Line
@@ -867,7 +863,7 @@ F 3 "~" H 4455 6290 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3955 6790 4255 6790
+	3955 6790 4155 6790
 Wire Notes Line
 	11130 6470 6900 6470
 Wire Notes Line
@@ -886,20 +882,16 @@ $EndComp
 Wire Wire Line
 	5530 6400 5730 6400
 Wire Wire Line
-	5530 6700 5730 6700
-Wire Wire Line
-	5730 6800 5730 6750
-Wire Wire Line
 	5530 6800 5730 6800
 $Comp
 L power:GND #PWR029
 U 1 1 60245A07
-P 5835 6750
-F 0 "#PWR029" H 5835 6500 50  0001 C CNN
-F 1 "GND" H 5840 6577 50  0000 C CNN
-F 2 "" H 5835 6750 50  0001 C CNN
-F 3 "" H 5835 6750 50  0001 C CNN
-	1    5835 6750
+P 5730 6800
+F 0 "#PWR029" H 5730 6550 50  0001 C CNN
+F 1 "GND" H 5735 6627 50  0000 C CNN
+F 2 "" H 5730 6800 50  0001 C CNN
+F 3 "" H 5730 6800 50  0001 C CNN
+	1    5730 6800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -916,10 +908,6 @@ Wire Wire Line
 	5530 6500 5725 6500
 Wire Wire Line
 	5530 6600 5725 6600
-Text GLabel 5730 6000 2    50   Input ~ 0
-UART_TX
-Text GLabel 5730 6100 2    50   Input ~ 0
-UART_RX
 $Comp
 L power:+5V #PWR025
 U 1 1 601C4A8C
@@ -942,31 +930,31 @@ F 3 "" H 5730 5900 50  0001 C CNN
 	1    5730 5900
 	0    1    1    0   
 $EndComp
-Text GLabel 5730 6300 2    50   Input ~ 0
+Text GLabel 5530 6700 2    50   Input ~ 0
 VSW
-Text GLabel 5730 6200 2    50   Input ~ 0
+Text GLabel 5725 6500 2    50   Input ~ 0
 VDDCORE
 Text GLabel 5730 6400 2    50   Input ~ 0
 PA28
-Text GLabel 4255 5990 0    50   Input ~ 0
-PA03
-Text GLabel 4255 6090 0    50   Input ~ 0
+Text GLabel 5730 6100 2    50   Input ~ 0
+PB03
+Text GLabel 5730 6000 2    50   Input ~ 0
 PA06
 Text GLabel 5725 6600 2    50   Input ~ 0
 PA22
-Text GLabel 4255 6390 0    50   Input ~ 0
+Text GLabel 4255 6590 0    50   Input ~ 0
 PA14
 Text GLabel 4255 6490 0    50   Input ~ 0
 PA15
-Text GLabel 4255 6690 0    50   Input ~ 0
+Text GLabel 4255 6390 0    50   Input ~ 0
 PA19
-Text GLabel 4255 6590 0    50   Input ~ 0
-PA18
-Text GLabel 5725 6500 2    50   Input ~ 0
-PA27
 Text GLabel 4255 6290 0    50   Input ~ 0
-PA08
+PA18
 Text GLabel 4255 6190 0    50   Input ~ 0
+PA27
+Text GLabel 4255 6090 0    50   Input ~ 0
+PA08
+Text GLabel 4255 5990 0    50   Input ~ 0
 PA07
 $Comp
 L Jumper:SolderJumper_2_Open JP3
@@ -988,33 +976,33 @@ Wire Wire Line
 Connection ~ 8970 3045
 Wire Wire Line
 	8970 3045 9025 3045
-Text Notes 7410 700  0    79   ~ 16
+Text Notes 4835 745  0    79   ~ 16
 IDD MEASUREMENT
 Text Label 4310 1110 0    50   ~ 0
 3V3
-Text Label 7870 1195 0    50   ~ 0
+Text Label 5135 1220 0    50   ~ 0
 3V3
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 601DEF95
-P 8010 1465
-F 0 "J6" V 7955 1460 50  0000 R CNN
-F 1 "Conn_01x02_Male" V 7885 1715 50  0000 R CNN
-F 2 "" H 8010 1465 50  0001 C CNN
-F 3 "~" H 8010 1465 50  0001 C CNN
-	1    8010 1465
+P 5275 1490
+F 0 "J6" V 5220 1485 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 5150 1740 50  0000 R CNN
+F 2 "" H 5275 1490 50  0001 C CNN
+F 3 "~" H 5275 1490 50  0001 C CNN
+	1    5275 1490
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7870 1195 8010 1195
+	5135 1220 5275 1220
 Wire Wire Line
-	8010 1195 8010 1265
+	5275 1220 5275 1290
 Wire Wire Line
-	8110 1265 8110 1190
+	5375 1290 5375 1215
 Wire Wire Line
-	8110 1190 8200 1190
+	5375 1215 5465 1215
 Wire Wire Line
-	8200 1190 8200 1160
+	5465 1215 5465 1185
 Wire Notes Line
 	7385 550  7385 2145
 Wire Notes Line
@@ -1107,4 +1095,15 @@ $EndComp
 Connection ~ 9830 1260
 Wire Wire Line
 	9830 1260 9830 1295
+Text GLabel 5730 6300 2    50   Input ~ 0
+S0_UART_RX
+Text GLabel 5730 6200 2    50   Input ~ 0
+S0_UART_TX
+Wire Wire Line
+	4155 6790 4155 6690
+Wire Wire Line
+	4155 6690 4255 6690
+Connection ~ 4155 6790
+Wire Wire Line
+	4155 6790 4255 6790
 $EndSCHEMATC
