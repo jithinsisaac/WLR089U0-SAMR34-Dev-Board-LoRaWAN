@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:WLR089U0-DevBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -10,8 +9,8 @@ Date "2/02/200"
 Rev "V1"
 Comp "Don Bosco Institute of Technology, Mumbai"
 Comment1 "IEEE SIGHT MTT-S Funded Project (LoRa RMS)"
-Comment2 "Atul Kumar, Jithin Saji Isaac"
-Comment3 ""
+Comment2 "jithin.dbit@dbclmumbai.org"
+Comment3 "Atul Kumar, Jithin Saji Isaac"
 Comment4 ""
 $EndDescr
 $Comp
@@ -303,16 +302,14 @@ $EndComp
 $Comp
 L power:+3V3 #PWR019
 U 1 1 601BD609
-P 4310 1080
-F 0 "#PWR019" H 4310 930 50  0001 C CNN
-F 1 "+3V3" H 4325 1253 50  0000 C CNN
-F 2 "" H 4310 1080 50  0001 C CNN
-F 3 "" H 4310 1080 50  0001 C CNN
-	1    4310 1080
+P 8130 1105
+F 0 "#PWR019" H 8130 955 50  0001 C CNN
+F 1 "+3V3" H 8145 1278 50  0000 C CNN
+F 2 "" H 8130 1105 50  0001 C CNN
+F 3 "" H 8130 1105 50  0001 C CNN
+	1    8130 1105
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4310 1080 4310 1110
 $Comp
 L power:+3V3 #PWR021
 U 1 1 601C0F1A
@@ -604,15 +601,13 @@ Wire Wire Line
 Wire Wire Line
 	6855 1415 6855 1420
 Wire Notes Line
-	7245 550  7245 2145
-Wire Notes Line
 	11130 550  11130 6470
 Text Notes 4800 700  0    79   ~ 16
 POWER LED
 Text Notes 6065 690  0    79   ~ 16
 GPIO STATUS LED
 Text Notes 6070 2445 0    79   ~ 16
-USB-UART USING CH340E via JP3 short (OR)\nUSB-USB via JP1,JP2 short
+USB-UART USING CH340E via JP3 short (OR)\nUSB-MCU_USB via JP1,JP2 short
 Wire Notes Line
 	6035 555  6035 5185
 Text Notes 3045 5330 0    79   ~ 16
@@ -826,8 +821,6 @@ Wire Wire Line
 	9370 3640 9740 3640
 Wire Wire Line
 	8970 4490 8970 4585
-Text Notes 7280 700  0    79   ~ 16
-BLANK SPACE
 $Comp
 L WLR089U0-DevBoard-rescue:CH304E U2
 U 1 1 6041E791
@@ -995,4 +988,109 @@ Wire Wire Line
 Connection ~ 8970 3045
 Wire Wire Line
 	8970 3045 9025 3045
+Text Notes 7410 700  0    79   ~ 16
+IDD MEASUREMENT
+Text Label 4310 1110 0    50   ~ 0
+3V3
+Text Label 7800 1140 0    50   ~ 0
+3V3
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 601DEF95
+P 7940 1410
+F 0 "J?" V 7885 1405 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 7815 1660 50  0000 R CNN
+F 2 "" H 7940 1410 50  0001 C CNN
+F 3 "~" H 7940 1410 50  0001 C CNN
+	1    7940 1410
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 1140 7940 1140
+Wire Wire Line
+	7940 1140 7940 1210
+Wire Wire Line
+	8040 1210 8040 1135
+Wire Wire Line
+	8040 1135 8130 1135
+Wire Wire Line
+	8130 1135 8130 1105
+Wire Notes Line
+	7385 550  7385 2145
+Wire Notes Line
+	8825 550  8825 2150
+Text Notes 8855 705  0    79   ~ 16
+TEST POINTS
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6020C0AB
+P 9105 1160
+F 0 "TP?" H 9040 1360 50  0000 L CNN
+F 1 "TestPoint" H 9110 1215 50  0000 L CNN
+F 2 "" H 9305 1160 50  0001 C CNN
+F 3 "~" H 9305 1160 50  0001 C CNN
+	1    9105 1160
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6020CE51
+P 10200 1160
+F 0 "TP?" H 10140 1360 50  0000 L CNN
+F 1 "TestPoint" H 10210 1220 50  0000 L CNN
+F 2 "" H 10400 1160 50  0001 C CNN
+F 3 "~" H 10400 1160 50  0001 C CNN
+	1    10200 1160
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6020D29F
+P 9670 1160
+F 0 "TP?" H 9605 1360 50  0000 L CNN
+F 1 "TestPoint" H 9675 1220 50  0000 L CNN
+F 2 "" H 9870 1160 50  0001 C CNN
+F 3 "~" H 9870 1160 50  0001 C CNN
+	1    9670 1160
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6021289A
+P 9670 1235
+F 0 "#PWR?" H 9670 1085 50  0001 C CNN
+F 1 "+3V3" H 9685 1408 50  0000 C CNN
+F 2 "" H 9670 1235 50  0001 C CNN
+F 3 "" H 9670 1235 50  0001 C CNN
+	1    9670 1235
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60214566
+P 9105 1245
+F 0 "#PWR?" H 9105 1095 50  0001 C CNN
+F 1 "+5V" H 9120 1418 50  0000 C CNN
+F 2 "" H 9105 1245 50  0001 C CNN
+F 3 "" H 9105 1245 50  0001 C CNN
+	1    9105 1245
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602154C2
+P 10200 1250
+F 0 "#PWR?" H 10200 1000 50  0001 C CNN
+F 1 "GND" H 10205 1077 50  0000 C CNN
+F 2 "" H 10200 1250 50  0001 C CNN
+F 3 "" H 10200 1250 50  0001 C CNN
+	1    10200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9670 1160 9670 1235
+Wire Wire Line
+	10200 1160 10200 1250
+Wire Wire Line
+	9105 1160 9105 1245
 $EndSCHEMATC
