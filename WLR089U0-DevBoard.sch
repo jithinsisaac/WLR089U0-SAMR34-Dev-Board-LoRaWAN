@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WLR089U0-SAMR34 LoRaWAN Development Board"
-Date "2/02/200"
+Date "2021-02-02"
 Rev "V1"
 Comp "Don Bosco Institute of Technology, Mumbai"
 Comment1 "IEEE SIGHT MTT-S Funded Project (LoRa RMS)"
