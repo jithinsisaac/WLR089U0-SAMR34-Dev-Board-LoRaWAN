@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:WLR089U0-DevBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -494,7 +493,7 @@ U 1 1 601E3392
 P 4660 3775
 F 0 "SW1" V 4614 3923 50  0000 L CNN
 F 1 "SW_Push" V 4705 3923 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 4660 3975 50  0001 C CNN
+F 2 "WLR089u0-DevBoard:Tactile Switch 3x4x2mm" H 4660 3975 50  0001 C CNN
 F 3 "~" H 4660 3975 50  0001 C CNN
 	1    4660 3775
 	0    1    1    0   
@@ -989,7 +988,7 @@ U 1 1 6020C0AB
 P 9225 1315
 F 0 "TP1" H 9160 1515 50  0000 L CNN
 F 1 "TestPoint" H 9230 1370 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9425 1315 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 9425 1315 50  0001 C CNN
 F 3 "~" H 9425 1315 50  0001 C CNN
 	1    9225 1315
 	1    0    0    -1  
@@ -1000,7 +999,7 @@ U 1 1 6020CE51
 P 10565 1315
 F 0 "TP3" H 10505 1515 50  0000 L CNN
 F 1 "TestPoint" H 10575 1375 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10765 1315 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 10765 1315 50  0001 C CNN
 F 3 "~" H 10765 1315 50  0001 C CNN
 	1    10565 1315
 	1    0    0    -1  
@@ -1011,7 +1010,7 @@ U 1 1 6020D29F
 P 9850 1315
 F 0 "TP2" H 9785 1515 50  0000 L CNN
 F 1 "TestPoint" H 9855 1375 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10050 1315 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad_TopBottom" H 10050 1315 50  0001 C CNN
 F 3 "~" H 10050 1315 50  0001 C CNN
 	1    9850 1315
 	1    0    0    -1  
