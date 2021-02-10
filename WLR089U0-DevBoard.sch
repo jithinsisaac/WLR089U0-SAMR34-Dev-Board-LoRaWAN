@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:WLR089U0-DevBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -706,13 +707,13 @@ Wire Wire Line
 	8895 5995 8895 5810
 Wire Wire Line
 	8795 5995 8795 5810
-Text GLabel 8995 5810 1    50   Input ~ 0
+Text GLabel 8895 5810 1    50   Input ~ 0
 S5_MOSI
-Text GLabel 9095 5810 1    50   Input ~ 0
+Text GLabel 8995 5810 1    50   Input ~ 0
 S5_SS
-Text GLabel 9195 5815 1    50   Input ~ 0
+Text GLabel 9095 5810 1    50   Input ~ 0
 S5_SCK
-Text GLabel 9295 5815 1    50   Input ~ 0
+Text GLabel 9195 5815 1    50   Input ~ 0
 S5_MISO
 $Comp
 L Connector:Conn_01x10_Male J6
@@ -725,7 +726,7 @@ F 3 "~" H 8995 6195 50  0001 C CNN
 	1    8995 6195
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8895 5810 1    50   Input ~ 0
+Text GLabel 4255 6290 0    50   Input ~ 0
 S1_I2C_SDA
 $Comp
 L power:GND #PWR029
@@ -738,7 +739,7 @@ F 3 "" H 9395 5865 50  0001 C CNN
 	1    9395 5865
 	-1   0    0    1   
 $EndComp
-Text GLabel 8795 5810 1    50   Input ~ 0
+Text GLabel 4255 6390 0    50   Input ~ 0
 S1_I2C_SCL
 Wire Wire Line
 	2360 1085 2360 1110
@@ -837,8 +838,6 @@ F 3 "~" H 4455 6290 50  0001 C CNN
 	1    4455 6290
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3955 6790 4155 6790
 Wire Notes Line
 	11130 6470 6900 6470
 Wire Notes Line
@@ -857,7 +856,7 @@ $EndComp
 Wire Wire Line
 	5530 6400 5730 6400
 Wire Wire Line
-	5530 6800 5730 6800
+	5530 6800 5610 6800
 $Comp
 L power:GND #PWR021
 U 1 1 60245A07
@@ -913,15 +912,15 @@ Text GLabel 5730 6100 2    50   Input ~ 0
 PB03
 Text GLabel 5730 6000 2    50   Input ~ 0
 PA06
-Text GLabel 5720 6700 2    50   Input ~ 0
+Text GLabel 9295 5815 1    50   Input ~ 0
 PA22
-Text GLabel 4255 6590 0    50   Input ~ 0
+Text GLabel 8795 5810 1    50   Input ~ 0
 PA14
-Text GLabel 4255 6490 0    50   Input ~ 0
+Text GLabel 4255 6690 0    50   Input ~ 0
 PA15
-Text GLabel 4255 6390 0    50   Input ~ 0
+Text GLabel 4255 6590 0    50   Input ~ 0
 PA19
-Text GLabel 4255 6290 0    50   Input ~ 0
+Text GLabel 4255 6490 0    50   Input ~ 0
 PA18
 Text GLabel 4255 6190 0    50   Input ~ 0
 PA27
@@ -1049,15 +1048,6 @@ S0_UART_RX
 Text GLabel 5730 6200 2    50   Input ~ 0
 S0_UART_TX
 Wire Wire Line
-	4155 6790 4155 6690
-Wire Wire Line
-	4155 6690 4255 6690
-Connection ~ 4155 6790
-Wire Wire Line
-	4155 6790 4255 6790
-Wire Wire Line
-	5530 6700 5720 6700
-Wire Wire Line
 	5530 6600 5725 6600
 Wire Wire Line
 	2610 1470 2610 1615
@@ -1084,4 +1074,13 @@ F 3 "~" V 6545 1445 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3875 5890 4255 5890
+Wire Wire Line
+	3955 6790 4255 6790
+Wire Wire Line
+	5530 6700 5610 6700
+Wire Wire Line
+	5610 6700 5610 6800
+Connection ~ 5610 6800
+Wire Wire Line
+	5610 6800 5730 6800
 $EndSCHEMATC

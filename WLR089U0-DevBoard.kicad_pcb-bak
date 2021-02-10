@@ -68,7 +68,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFF7FF)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -520,7 +520,7 @@
   )
 
   (module SamacSys_Parts:WLR089U0IRM (layer F.Cu) (tedit 0) (tstamp 6023B7EE)
-    (at 122.25 87.85)
+    (at 122.45 86.25)
     (descr WLR089U0-I/RM-3)
     (tags "Integrated Circuit")
     (path /601A9C3D)
