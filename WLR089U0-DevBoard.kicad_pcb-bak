@@ -207,7 +207,7 @@
   )
 
   (module Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels (layer F.Cu) (tedit 5C745336) (tstamp 6023E492)
-    (at 108.458 104.5972 270)
+    (at 108.7628 104.6226 270)
     (descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers")
     (tags "solder jumper open")
     (path /602772DE)
