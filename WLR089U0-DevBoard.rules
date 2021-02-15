@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 713)
+    (start_pass_no 1956)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -41,10 +41,16 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -75,6 +81,16 @@
     )
     (circuit 
       (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu)
     )
   )
 )
