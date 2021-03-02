@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:WLR089U0-DevBoard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -886,7 +885,7 @@ U 1 1 601C47FE
 P 8565 3045
 F 0 "JP3" H 8565 3135 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 8355 2950 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8565 3045 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8565 3045 50  0001 C CNN
 F 3 "~" H 8565 3045 50  0001 C CNN
 	1    8565 3045
 	1    0    0    -1  
