@@ -27,7 +27,7 @@ Development board for Microchip's WLR089U0 LoRaWAN module consisting of the SAMR
 ![Product](./Pics/IMG_20210307_152251.jpg)
 
 ### Credits
-Atul Kumar  (Third Year student, AY2020-2021)
+Atul Kumar  (Third Year student, AY2020-2021)  
 Jithin Saji Isaac  
 Don Bosco Institute of Technology, Mumbai  
 Feb 2021
