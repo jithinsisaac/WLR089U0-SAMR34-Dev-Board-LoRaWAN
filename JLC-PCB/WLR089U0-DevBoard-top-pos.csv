@@ -1,0 +1,19 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,1u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,144.75,-88.68,270,top
+C2,1u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,151.6,-88.68,90,top
+C3,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,132.947,-88.68,270,top
+D1,Red,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,156.3,-92.7,180,top
+D2,Green,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,150.815,-118.293,90,top
+IC1,WLR089U0-I_RM,WLR089U0IRM,141.65,-107.45,180,top
+J1,USB_B_Micro,USB_Micro-AB_Molex_47590-0001,142.425,-81.5,180,top
+J2,Conn_ARM_JTAG_SWD_10,PinHeader_2x05_P1.27mm_Vertical,134.9,-82.1,270,top
+J3,Conn_01x10_Female,PinHeader_1x10_P2.54mm_Vertical,153.55,-118.8,180,top
+J4,Conn_01x02_Male,PinHeader_1x02_P2.54mm_Vertical,153.1,-82.4,270,top
+J5,Conn_01x10_Female,PinHeader_1x10_P2.54mm_Vertical,129.75,-95.95,0,top
+J6,Conn_01x08_Male,PinHeader_1x08_P2.54mm_Vertical,150.6,-93.9,270,top
+R1,10k,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,134.15,-119.068,0,top
+R2,1k,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,156.9,-88.65,270,top
+R3,1k,R_1206_3216Metric_Pad1.42x1.75mm_HandSolder,147.057,-119.068,0,top
+SW1,SW_Push,Tactile Switch 3x4x2mm,140.088,-116.703,0,top
+U1,MCP1700-3302E_SOT23,SOT-23,148.175,-88.7,90,top
+U2,CH304E,MSOP-10_3x3mm_P0.5mm,127.9,-89.85,0,top

@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8)-1*%
-%TF.CreationDate,2021-02-17T08:18:28+05:30*%
+%TF.CreationDate,2021-05-22T16:04:47+05:30*%
 %TF.ProjectId,WLR089U0-DevBoard,574c5230-3839-4553-902d-446576426f61,V1*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L2,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.8)-1) date 2021-02-17 08:18:28*
+G04 Created by KiCad (PCBNEW (5.1.8)-1) date 2021-05-22 16:04:47*
 %MOMM*%
 %LPD*%
 G01*
@@ -49,11 +49,11 @@ G04 APERTURE LIST*
 %TD*%
 G04 APERTURE END LIST*
 D10*
-%TO.P,3V3,1*%
+%TO.P,TP1,1*%
 %TO.N,+3V3*%
 X157600000Y-82700000D03*
 %TD*%
-%TO.P,GND,1*%
+%TO.P,TP2,1*%
 %TO.N,GND*%
 X126000000Y-82700000D03*
 %TD*%
@@ -339,11 +339,13 @@ X133630000Y-83370000D03*
 %TO.N,GND*%
 X132360000Y-82100000D03*
 %TO.P,J2,6*%
-%TO.N,N/C*%
+%TO.N,Net-(J2-Pad6)*%
 X132360000Y-83370000D03*
 %TO.P,J2,7*%
+%TO.N,Net-(J2-Pad7)*%
 X131090000Y-82100000D03*
 %TO.P,J2,8*%
+%TO.N,Net-(J2-Pad8)*%
 X131090000Y-83370000D03*
 %TO.P,J2,9*%
 %TO.N,GND*%
