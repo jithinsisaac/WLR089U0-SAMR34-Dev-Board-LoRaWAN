@@ -28,6 +28,6 @@ Development board for Microchip's WLR089U0 LoRaWAN module consisting of the SAMR
 
 ### Credits
 Atul Kumar  (Third Year student, AY2020-2021)  
-Jithin Saji Isaac (Assistant Professor, Dept. of EXTC)
+Jithin Saji Isaac (Assistant Professor, Dept. of EXTC)  
 Don Bosco Institute of Technology, Mumbai  
 Feb 2021
